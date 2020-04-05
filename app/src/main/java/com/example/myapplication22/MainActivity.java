@@ -15,7 +15,7 @@ import com.example.myapplication22.R;
 public class MainActivity extends AppCompatActivity {
 
     TextView resultField; // текстовое поле для вывода результата
-    EditText numberField;   // поле для ввода числа
+    TextView numberField;   // поле для ввода числа
     TextView operationField;    // текстовое поле для вывода знака операции
     Double operand = null;  // операнд операции
     String lastOperation = "="; // последняя операция
@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         // получаем все поля по id из activity_main.xml
         resultField =(TextView) findViewById(R.id.resultField);
-        numberField = (EditText) findViewById(R.id.numberField);
+        numberField = (TextView) findViewById(R.id.numberField);
         operationField = (TextView) findViewById(R.id.operationField);
     }
     // сохранение состояния
